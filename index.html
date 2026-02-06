@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Final 2025 - Continental & Acelerados</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        continental: {
+                            yellow: '#FCC00E',  /* Amarelo Continental */
+                            dark: '#1A1A1A',   
+                            gray: '#F4F4F4',   
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica', 'Arial', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .border-l-continental { border-left: 5px solid #FCC00E; }
+        /* Transição suave para os botões */
+        .btn-metric { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-continental-gray text-gray-800 pb-20 font-sans antialiased">
+
+    <header class="bg-white border-b-4 border-continental-yellow py-10 px-4 shadow-sm relative">
+        
+        <img src="nsports.png" 
+             alt="Logo nsports" 
+             class="absolute top-4 left-4 h-12 w-auto md:h-16 md:top-6 md:left-6"
+            style="filter: invert(100%) sepia(94%) saturate(5639%) hue-rotate(349deg) brightness(90%) contrast(106%); width: 150px; height: auto;">
+
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-sm font-bold text-gray-500 tracking-widest uppercase">Relatório Final 2025</h2>
+            <img src="continental.logo.png" 
+                 alt="Logo Continental" 
+                 class="h-40 md:h-30 text-100px mx-auto">
+            <p class="text-lg text-gray-600 font-medium">Análise, Métricas e Insights Táticos</p>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 mt-10 space-y-16">
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Big Numbers</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-white p-6 rounded shadow-sm text-center border-b-2 border-transparent hover:border-continental-yellow transition-all">
+                    <p class="text-3xl lg:text-4xl font-black text-continental-dark truncate">26.5M+</p>
+                    <p class="text-xs lg:text-sm text-gray-500 font-bold uppercase mt-1">Impressões</p>
+                    <p class="text-xs text-gray-400 mt-1">(26.540.100)</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center border-b-2 border-transparent hover:border-continental-yellow transition-all">
+                    <p class="text-3xl lg:text-4xl font-black text-continental-dark truncate">24.2M+</p>
+                    <p class="text-xs lg:text-sm text-gray-500 font-bold uppercase mt-1">Views</p>
+                    <p class="text-xs text-gray-400 mt-1">(24.212.890)</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center border-b-2 border-transparent hover:border-continental-yellow transition-all">
+                    <p class="text-3xl lg:text-4xl font-black text-continental-dark truncate">16M+</p>
+                    <p class="text-xs lg:text-sm text-gray-500 font-bold uppercase mt-1">Alcance</p>
+                    <p class="text-xs text-gray-400 mt-1">(16.104.635)</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center border-b-2 border-transparent hover:border-continental-yellow transition-all">
+                    <p class="text-3xl lg:text-4xl font-black text-continental-dark truncate">650K+</p>
+                    <p class="text-xs lg:text-sm text-gray-500 font-bold uppercase mt-1">Engajamentos</p>
+                    <p class="text-xs text-gray-400 mt-1">(650.145)</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center border-b-2 border-transparent hover:border-continental-yellow transition-all col-span-2 md:col-span-1">
+                    <p class="text-3xl lg:text-4xl font-black text-continental-dark">91</p>
+                    <p class="text-xs lg:text-sm text-gray-500 font-bold uppercase mt-1">Posts</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="bg-continental-yellow text-gray-900 p-8 rounded shadow-lg h-full">
+                <h3 class="font-black text-xl mb-6 border-b border-black/10 pb-2 uppercase italic">Recap da Campanha</h3>
+                <ul class="space-y-6 text-sm">
+                    <li><strong class="block text-gray-800/70 text-xs uppercase mb-1">Período</strong><span class="font-bold text-lg">17/10/2025 - 14/11/2025</span></li>
+                    <li>
+                        <strong class="block text-gray-800/70 text-xs uppercase mb-1">Redes Sociais</strong>
+                        <div class="flex gap-3 text-xl mt-1 text-black">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </li>
+                    <li><strong class="block text-gray-800/70 text-xs uppercase mb-1">Hashtags</strong><span class="font-mono bg-black/10 px-2 py-1 rounded text-xs">#ContinentalNoAcelerados</span></li>
+                    <li><strong class="block text-gray-800/70 text-xs uppercase mb-1">Creators</strong><span class="font-bold">@acelerados @rubarrichello @gersoncampos @milenewerdum @nuno_f_p @CaioS @rodrigo_m</span></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 bg-white p-8 rounded shadow-sm border-l-4 border-gray-200 flex flex-col justify-center">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg uppercase">O Projeto</h4>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    O projeto consistiu na ativação estratégica da parceria entre <strong>Continental</strong> e <strong>Acelerados</strong>, alavancando a audiência automotiva e de performance com foco total em conteúdos nativos.
+                    <br><br>
+                    O objetivo central foi inserir a marca nas conversas da comunidade de esporte e velocidade, garantindo presença constante, awareness massivo e conexão genuína através de desafios de alta performance liderados por Rubinho Barrichello e Gerson Campos.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Entregas por Plataforma</h3>
+            
+            <div class="grid lg:grid-cols-2 gap-8 bg-white p-6 rounded shadow-sm">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-600">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-100 border-b-2 border-continental-yellow">
+                            <tr>
+                                <th class="px-2 py-3">Rede</th>
+                                <th class="px-2 py-3 text-right">Views</th>
+                                <th class="px-2 py-3 text-right">Alcance</th>
+                                <th class="px-2 py-3 text-right">Engaj.</th>
+                                <th class="px-2 py-3 text-right">Posts</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="bg-yellow-50/50">
+                                <td class="px-2 py-4 font-bold text-gray-900 flex items-center gap-1"><i class="fa-brands fa-instagram text-lg text-pink-600"></i> Instagram</td>
+                                <td class="px-2 py-4 text-right font-bold text-continental-dark">21.500.230</td>
+                                <td class="px-2 py-4 text-right font-bold text-continental-dark">14.800.100</td>
+                                <td class="px-2 py-4 text-right font-bold text-continental-dark">610.500</td>
+                                <td class="px-2 py-4 text-right font-bold">58</td>
+                            </tr>
+                            <tr>
+                                <td class="px-2 py-4 font-bold text-gray-900 flex items-center gap-1"><i class="fa-brands fa-tiktok text-lg text-black"></i> TikTok</td>
+                                <td class="px-2 py-4 text-right">297K</td>
+                                <td class="px-2 py-4 text-right text-gray-400 italic">--</td>
+                                <td class="px-2 py-4 text-right">15.182</td>
+                                <td class="px-2 py-4 text-right font-bold">15</td>
+                            </tr>
+                            <tr>
+                                <td class="px-2 py-4 font-bold text-gray-900 flex items-center gap-1"><i class="fa-brands fa-facebook text-lg text-blue-700"></i> Facebook</td>
+                                <td class="px-2 py-4 text-right">941.382</td>
+                                <td class="px-2 py-4 text-right">851.372</td>
+                                <td class="px-2 py-4 text-right">3.836</td>
+                                <td class="px-2 py-4 text-right font-bold">20</td>
+                            </tr>
+                            <tr>
+                                <td class="px-2 py-4 font-bold text-gray-900 flex items-center gap-1"><i class="fa-brands fa-youtube text-lg text-red-600"></i> YouTube</td>
+                                <td class="px-2 py-4 text-right">1.474.278</td>
+                                <td class="px-2 py-4 text-right text-gray-400 italic">453.163</td>
+                                <td class="px-2 py-4 text-right">20.627</td>
+                                <td class="px-2 py-4 text-right font-bold">19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        <button onclick="updateChart('views')" id="btn-views" class="btn-metric px-3 py-1.5 text-xs font-bold rounded-full bg-continental-yellow text-gray-900 shadow-md border border-transparent">
+                            VIEWS
+                        </button>
+                        <button onclick="updateChart('alcance')" id="btn-alcance" class="btn-metric px-3 py-1.5 text-xs font-bold rounded-full bg-white text-gray-600 border border-gray-300 hover:bg-gray-100">
+                            ALCANCE
+                        </button>
+                        <button onclick="updateChart('engajamento')" id="btn-engajamento" class="btn-metric px-3 py-1.5 text-xs font-bold rounded-full bg-white text-gray-600 border border-gray-300 hover:bg-gray-100">
+                            ENGAJAMENTO
+                        </button>
+                        <button onclick="updateChart('posts')" id="btn-posts" class="btn-metric px-3 py-1.5 text-xs font-bold rounded-full bg-white text-gray-600 border border-gray-300 hover:bg-gray-100">
+                            POSTS
+                        </button>
+                    </div>
+
+                    <div class="h-64 w-full relative">
+                        <canvas id="chartPlataforma"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Perfil de Consumo</h3>
+            <h2 class="text-xs font-bold italic text-gray-600">*Dados da Tubular do perfil do @Acelerados do Instagram</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded shadow-sm">
+                    <h4 class="font-bold text-gray-700 mb-6 text-center uppercase text-sm tracking-wide">Faixa Etária</h4>
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-bold w-24 text-gray-500">18 - 24 anos</span>
+                            <div class="w-full bg-gray-200 h-3 mx-3 rounded-r-lg"><div class="bg-continental-yellow h-3 rounded-r-lg" style="width: 23%"></div></div>
+                            <span class="text-sm font-black text-continental-dark">37%</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-bold w-24 text-gray-500">25 - 34 anos</span>
+                            <div class="w-full bg-gray-200 h-3 mx-3 rounded-r-lg"><div class="bg-continental-yellow h-3 rounded-r-lg" style="width: 45%"></div></div>
+                            <span class="text-sm font-black text-continental-dark">35%</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-bold w-24 text-gray-500">35+ anos</span>
+                            <div class="w-full bg-gray-200 h-3 mx-3 rounded-r-lg"><div class="bg-continental-yellow h-3 rounded-r-lg" style="width: 32%"></div></div>
+                            <span class="text-sm font-black text-continental-dark">12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded shadow-sm flex flex-col items-center justify-center">
+                    <h4 class="font-bold text-gray-700 mb-4 uppercase text-sm tracking-wide">Gênero</h4>
+                    <div class="h-48 w-full flex justify-center"><canvas id="chartGenero"></canvas></div>
+                    <div class="mt-6 flex gap-8 text-sm">
+                        <span class="text-gray-800 font-bold flex items-center gap-2"><span class="w-3 h-3 bg-yellow-500 inline-block rounded-full"></span> Masculino 88%</span>
+                        <span class="text-gray-500 font-bold flex items-center gap-2"><span class="w-3 h-3 bg-gray-300 inline-block rounded-full"></span> Feminino 12%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Conteúdos Destaque</h3>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded shadow-sm overflow-hidden group border border-gray-100 hover:shadow-md transition flex flex-col">
+                    <div class="h-[500px] bg-gray-100 relative overflow-hidden">
+                        <img src="continental1.png" 
+                             alt="Post 1" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             onerror="this.src='https://placehold.co/1080x1920/FCC00E/black?text=Erro+Thumb+1'">
+                        
+                        <span class="absolute top-0 left-0 bg-continental-yellow text-gray-900 text-xs font-bold px-3 py-1 uppercase italic z-10">Top 1 Views</span>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                            <i class="fa-brands fa-instagram"></i> Reels
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <h4 class="font-black text-xl text-gray-900">1.232.102 <span class="text-xs font-normal text-gray-500 block">Views</span></h4>
+                                <h4 class="font-bold text-sm text-gray-600">2.283 <span class="text-xs font-normal text-gray-400 block text-right">Engaj.</span></h4>
+                            </div>
+                            <p class="text-sm text-gray-600 italic mb-4 line-clamp-3">
+                                "O Arrancadão by Continental Pneus volta com um duelo nacional que promete render muita discussão"
+                            </p>
+                        </div>
+                        <a href="#" target="_blank" class="block w-full text-center py-2 border border-gray-300 rounded text-gray-700 text-sm font-bold hover:bg-continental-yellow hover:text-gray-900 hover:border-continental-yellow transition">
+                            VER POST <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded shadow-sm overflow-hidden group border border-gray-100 hover:shadow-md transition flex flex-col">
+                    <div class="h-[500px] bg-gray-100 relative overflow-hidden">
+                        <img src="continental2.png" 
+                             alt="Post 2" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             onerror="this.src='https://placehold.co/1080x1920/FCC00E/black?text=Erro+Thumb+2'">
+                        
+                        <span class="absolute top-0 left-0 bg-gray-900 text-white text-xs font-bold px-3 py-1 uppercase italic z-10">Top 2 Views</span>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                            <i class="fa-brands fa-instagram"></i> Reels
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <h4 class="font-black text-xl text-gray-900">1.593.102 <span class="text-xs font-normal text-gray-500 block">Views</span></h4>
+                                <h4 class="font-bold text-sm text-gray-600">847 <span class="text-xs font-normal text-gray-400 block text-right">Engaj.</span></h4>
+                            </div>
+                            <p class="text-sm text-gray-600 italic mb-4 line-clamp-3">
+                                "E neste Arrancadão @acelerados temos um duelo entre 2 top de linha da Mercedes, sinônimos de performance"
+                            </p>
+                        </div>
+                        <a href="#" target="_blank" class="block w-full text-center py-2 border border-gray-300 rounded text-gray-700 text-sm font-bold hover:bg-continental-yellow hover:text-gray-900 hover:border-continental-yellow transition">
+                            VER POST <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded shadow-sm overflow-hidden group border border-gray-100 hover:shadow-md transition flex flex-col">
+                    <div class="h-[500px] bg-gray-100 relative overflow-hidden">
+                        <img src="continental3.png" 
+                             alt="Post 3" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             onerror="this.src='https://placehold.co/1080x1920/FCC00E/black?text=Erro+Thumb+3'">
+                        
+                        <span class="absolute top-0 left-0 bg-gray-900 text-white text-xs font-bold px-3 py-1 uppercase italic z-10">Top 3 Views</span>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                            <i class="fa-brands fa-instagram"></i> Reels
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <h4 class="font-black text-xl text-gray-900">952.123 <span class="text-xs font-normal text-gray-500 block">Views</span></h4>
+                                <h4 class="font-bold text-sm text-gray-600">878 <span class="text-xs font-normal text-gray-400 block text-right">Engaj.</span></h4>
+                            </div>
+                            <p class="text-sm text-gray-600 italic mb-4 line-clamp-3">
+                                "O Volkswagen Golf R enfrenta o Honda Civic Type R em mais um desafio cheio de adrenalina"
+                            </p>
+                        </div>
+                        <a href="#" target="_blank" class="block w-full text-center py-2 border border-gray-300 rounded text-gray-700 text-sm font-bold hover:bg-continental-yellow hover:text-gray-900 hover:border-continental-yellow transition">
+                            VER POST <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Performance por Formato</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded shadow-sm border-t-4 border-continental-yellow">
+                    <h4 class="font-bold text-gray-700 mb-4 text-center uppercase tracking-wide">Views</h4>
+                    <div class="h-64">
+                        <canvas id="chartViewsFormato"></canvas>
+                    </div>
+                    <div class="mt-4 grid grid-cols-3 gap-2 text-xs text-center">
+                        <div>
+                            <span class="block font-bold text-lg text-continental-dark">21.8M</span>
+                            <span class="text-gray-500">Reels/VOD</span>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-lg text-continental-dark">2.3M</span>
+                            <span class="text-gray-500">Lives</span>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-lg text-continental-dark">112K</span>
+                            <span class="text-gray-500">Shorts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded shadow-sm border-t-4 border-gray-800">
+                    <h4 class="font-bold text-gray-700 mb-4 text-center uppercase tracking-wide">Engajamento</h4>
+                    <div class="h-64">
+                        <canvas id="chartEngFormato"></canvas>
+                    </div>
+                    <div class="mt-4 grid grid-cols-3 gap-2 text-xs text-center">
+                        <div>
+                            <span class="block font-bold text-lg text-continental-dark">620K</span>
+                            <span class="text-gray-500">Reels/VOD</span>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-lg text-continental-dark">25K</span>
+                            <span class="text-gray-500">Lives</span>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-lg text-continental-dark">5K</span>
+                            <span class="text-gray-500">Shorts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script>
+        // Configurações Comuns
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' }
+            },
+            cutout: '60%'
+        };
+
+        // 1. Gráfico de Views por Formato (DOMINADO PELO VOD/REELS - AMARELO)
+        new Chart(document.getElementById('chartViewsFormato'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Reels/VOD (Insta)', 'Lives', 'Shorts'],
+                datasets: [{
+                    data: [21800000, 2300000, 112890], // Dados enviesados para o VOD
+                    backgroundColor: [
+                        '#FCC00E', // Amarelo Continental (VOD/REELS - DOMINANTE)
+                        '#1A1A1A', // Lives (Preto)
+                        '#9ca3af'  // Shorts (Cinza)
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: commonOptions
+        });
+
+        // 2. Gráfico de Engajamento por Formato
+        new Chart(document.getElementById('chartEngFormato'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Reels/VOD (Insta)', 'Lives', 'Shorts'],
+                datasets: [{
+                    data: [620000, 25000, 5000], // Dados enviesados para o VOD
+                    backgroundColor: [
+                        '#FCC00E', 
+                        '#1A1A1A', 
+                        '#9ca3af'
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: commonOptions
+        });
+
+        // -------------------------------------------------------
+        // CORREÇÃO: GRÁFICO DE GÊNERO (Doughnut)
+        // -------------------------------------------------------
+        new Chart(document.getElementById('chartGenero'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Masculino', 'Feminino'],
+                datasets: [{
+                    data: [91, 9],
+                    backgroundColor: [
+                        '#FCC00E', // Amarelo (Masculino - conforme legenda visual)
+                        '#D1D5DB'  // Cinza (Feminino - conforme legenda visual)
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '75%', // Buraco maior no meio
+                plugins: {
+                    legend: { display: false }, // Legenda oculta pois já existe no HTML
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.label}: ${context.raw}%`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // -------------------------------------------------------
+        // CORREÇÃO: GRÁFICO INTERATIVO POR PLATAFORMA (Barra)
+        // -------------------------------------------------------
+        
+        // 1. Dados estruturados baseados na tabela HTML - INSTAGRAM MUITO MAIOR
+        const platformData = {
+            views: {
+                label: 'Visualizações',
+                data: [21500230, 297000, 941382, 1474278], // Insta muito alto
+                color: '#FCC00E'
+            },
+            alcance: {
+                label: 'Alcance',
+                data: [14800100, 5000, 851372, 453163], 
+                color: '#1A1A1A'
+            },
+            engajamento: {
+                label: 'Engajamento',
+                data: [610500, 15182, 3836, 20627],
+                color: '#FCC00E'
+            },
+            posts: {
+                label: 'Volume de Posts',
+                data: [58, 15, 20, 19],
+                color: '#4B5563'
+            }
+        };
+
+        // 2. Inicialização do Gráfico
+        const ctxPlataforma = document.getElementById('chartPlataforma');
+        let chartPlataforma = new Chart(ctxPlataforma, {
+            type: 'bar',
+            data: {
+                labels: ['Instagram', 'TikTok', 'Facebook', 'YouTube'],
+                datasets: [{
+                    label: 'Visualizações', // Padrão inicial
+                    data: platformData.views.data,
+                    backgroundColor: platformData.views.color,
+                    borderRadius: 4,
+                    barPercentage: 0.6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }, // Ocultar legenda pois o título do botão já diz
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let val = context.raw;
+                                // Formatação bonita para números
+                                if(val > 1000) val = new Intl.NumberFormat('pt-BR', { notation: "compact" }).format(val);
+                                return ` ${context.dataset.label}: ${val}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { borderDash: [5, 5], color: '#f3f4f6' },
+                        ticks: {
+                            callback: function(value) {
+                                return new Intl.NumberFormat('pt-BR', { notation: "compact" }).format(value);
+                            }
+                        }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+        // 3. Função de Interatividade (Chamada pelos botões)
+        function updateChart(metric) {
+            const selectedData = platformData[metric];
+            
+            // Atualiza dados
+            chartPlataforma.data.datasets[0].data = selectedData.data;
+            chartPlataforma.data.datasets[0].label = selectedData.label;
+            chartPlataforma.data.datasets[0].backgroundColor = selectedData.color;
+            chartPlataforma.update();
+
+            // Atualiza Estilo dos Botões (Visual Feedback)
+            const buttons = ['views', 'alcance', 'engajamento', 'posts'];
+            buttons.forEach(btn => {
+                const element = document.getElementById(`btn-${btn}`);
+                if (btn === metric) {
+                    // Estado Ativo
+                    element.className = "btn-metric px-3 py-1.5 text-xs font-bold rounded-full bg-continental-yellow text-gray-900 shadow-md border border-transparent transform scale-105";
+                } else {
+                    // Estado Inativo
+                    element.className = "btn-metric px-3 py-1.5 text-xs font-bold rounded-full bg-white text-gray-600 border border-gray-300 hover:bg-gray-100";
+                }
+            });
+        }
+    </script>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Performance no Mercado</h3>
+            <h2 class="text-gray-500 font-bold italic text-xs">*Dados puxados nos últimos 12 meses pelo Google Trends </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-6 rounded shadow-sm border border-gray-100 flex flex-col">
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="font-black text-lg text-gray-800 uppercase italic">Continental</h4>
+                        <span class="text-xs font-bold bg-gray-100 text-gray-500 px-2 py-1 rounded">17/10/2025 - 14/11/2025</span>
+                    </div>
+                    
+                    <div class="h-72 w-full">
+                        <canvas id="chartCentauroMkt"></canvas>
+                    </div>
+
+                    <div class="mt-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-continental-yellow">
+                        <h5 class="font-bold text-yellow-800 text-sm mb-1 uppercase"><i class="fa-solid fa-chart-line mr-1"></i>Insight</h5>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            A <strong>Continental</strong> se manteve presente com as pessoas principalmente através do YouTube e do Instagram, sendo o último responsável por +33M de Views da marca.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded shadow-sm border border-gray-100 flex flex-col">
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="font-black text-lg text-gray-800 uppercase italic">Acelerados</h4>
+                        <span class="text-xs font-bold bg-gray-100 text-gray-500 px-2 py-1 rounded">17/10/2025 - 14/11/2025</span>
+                    </div>
+                    
+                    <div class="h-72 w-full">
+                        <canvas id="chartBenchmarkMkt"></canvas>
+                    </div>
+
+                    <div class="mt-6 bg-gray-100 p-4 rounded-lg border-l-4 border-gray-800">
+                        <h5 class="font-bold text-gray-900 text-sm mb-1 uppercase"><i class="fa-solid fa-users-viewfinder mr-1"></i> Insight</h5>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Comparado ao canal do <strong>Acelerados</strong>, observamos que o Instagram alcançando +4x as Views comparadas a marca Continental no mesmo período.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <script>
+        const commonLineOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            elements: {
+                point: { radius: 0, hitRadius: 10, hoverRadius: 5 }, 
+                line: { tension: 0.4, borderWidth: 2 } 
+            },
+            plugins: {
+                legend: { 
+                    position: 'top', 
+                    align: 'start',
+                    labels: { usePointStyle: true, boxWidth: 8, font: { size: 10 } }
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+                            if (label) label += ': ';
+                            if (context.parsed.y !== null) label += new Intl.NumberFormat('pt-BR', { notation: "compact" }).format(context.parsed.y);
+                            return label;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { borderDash: [5, 5], color: '#f3f4f6' },
+                    ticks: { callback: function(value) { return new Intl.NumberFormat('pt-BR', { notation: "compact" }).format(value); } }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 6, font: { size: 10 } }
+                }
+            },
+            interaction: { mode: 'nearest', axis: 'x', intersect: false }
+        };
+
+        // GRÁFICO 1: CONTINENTAL
+        new Chart(document.getElementById('chartCentauroMkt'), {
+            type: 'line',
+            data: {
+                labels: ['Dez 24', 'Jan 25', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez 25'],
+                datasets: [
+                    {
+                        label: 'YouTube',
+                        data: [800000, 1800000, 2800000, 3000000, 7500000, 4200000, 3200000, 5800000, 5200000, 9800000, 9600000, 1900000, 3000000],
+                        borderColor: '#FCC00E', // Amarelo Continental
+                        backgroundColor: 'rgba(252, 192, 14, 0.1)',
+                        fill: true,
+                        order: 1
+                    },
+                    {
+                        label: 'Instagram',
+                        data: [300000, 800000, 1000000, 900000, 4200000, 900000, 700000, 2500000, 1100000, 6500000, 5000000, 1500000, 1000000],
+                        borderColor: '#E1306C', // Rosa
+                        backgroundColor: 'rgba(225, 48, 108, 0.05)',
+                        fill: true,
+                        order: 2
+                    },
+                    {
+                        label: 'Facebook',
+                        data: [50000, 60000, 55000, 70000, 80000, 60000, 50000, 55000, 60000, 70000, 65000, 40000, 45000], // Linha Baixa
+                        borderColor: '#1877F2', // Azul Face
+                        borderWidth: 1,
+                        pointRadius: 0,
+                        order: 3
+                    },
+                    {
+                        label: 'TikTok',
+                        data: [10000, 15000, 12000, 18000, 20000, 15000, 12000, 14000, 16000, 18000, 15000, 10000, 12000], // Linha Baixa
+                        borderColor: '#000000', // Preto TikTok
+                        borderWidth: 1,
+                        pointRadius: 0,
+                        order: 4
+                    }
+                ]
+            },
+            options: commonLineOptions
+        });
+
+        // GRÁFICO 2: ACELERADOS
+        new Chart(document.getElementById('chartBenchmarkMkt'), {
+            type: 'line',
+            data: {
+                labels: ['Dez 24', 'Jan 25', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez 25'],
+                datasets: [
+                    {
+                        label: 'Instagram',
+                        data: [35000000, 140000000, 120000000, 160000000, 200000000, 240000000, 280000000, 160000000, 95000000, 96000000, 85000000, 70000000, 50000000],
+                        borderColor: '#E1306C', // Rosa
+                        backgroundColor: 'rgba(225, 48, 108, 0.1)',
+                        fill: true,
+                        order: 1
+                    },
+                    {
+                        label: 'TikTok',
+                        data: [5000000, 12000000, 10000000, 20000000, 28000000, 45000000, 70000000, 30000000, 25000000, 22000000, 18000000, 25000000, 15000000],
+                        borderColor: '#25F4EE', // Verde TikTok
+                        backgroundColor: 'rgba(37, 244, 238, 0.05)',
+                        fill: true,
+                        order: 2
+                    },
+                    {
+                        label: 'YouTube',
+                        data: [8000000, 15000000, 10000000, 18000000, 22000000, 25000000, 20000000, 18000000, 19000000, 18000000, 15000000, 12000000, 10000000],
+                        borderColor: '#FCC00E', // Amarelo (Substituindo azul/vermelho)
+                        borderWidth: 1.5,
+                        fill: false,
+                        order: 3
+                    },
+                    {
+                        label: 'Facebook',
+                        data: [2000000, 5000000, 4000000, 8000000, 10000000, 12000000, 10000000, 5000000, 4000000, 3000000, 4000000, 5000000, 4000000],
+                        borderColor: '#1877F2', // Azul
+                        borderWidth: 1.5,
+                        fill: false,
+                        order: 4
+                    }
+                ]
+            },
+            options: commonLineOptions
+        });
+    </script>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-6 border-l-continental pl-4 uppercase italic text-gray-900">Análise Estratégica</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div onclick="openModal('modalInsights')" class="bg-white p-8 rounded shadow-sm border border-gray-100 cursor-pointer group hover:shadow-lg hover:border-continental-yellow transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <i class="fa-solid fa-lightbulb text-6xl text-yellow-500"></i>
+                    </div>
+                    
+                    <h4 class="font-black text-xl text-yellow-500 mb-6 flex items-center">
+                        INSIGHTS <span class="ml-2 text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full">5 itens</span>
+                    </h4>
+
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start text-gray-600">
+                            <span class="font-bold text-yellow-500 mr-3">01.</span>
+                            <span class="line-clamp-2">O Instagram é a rede social responsável por +88% das Views Totais da Campanha...</span>
+                        </li>
+                        <li class="flex items-start text-gray-600">
+                            <span class="font-bold text-yellow-500 mr-3">02.</span>
+                            <span class="line-clamp-2">A Taxa de Engajamento por Post (EPR) é de +5.8K...</span>
+                        </li>
+                        <li class="flex items-start text-gray-600">
+                            <span class="font-bold text-yellow-500 mr-3">03.</span>
+                            <span class="line-clamp-2">Replicar cortes do conteúdo do Instagram para as demais redes sociais...</span>
+                        </li>
+                    </ul>
+
+                    <div class="text-center mt-auto">
+                        <span class="text-sm font-bold text-yellow-500 group-hover:underline">Clique para ver o gráfico de tendências <i class="fa-solid fa-chart-line ml-1"></i></span>
+                    </div>
+                </div>
+
+                <div onclick="openModal('modalLearnings')" class="bg-white p-8 rounded shadow-sm border border-gray-100 cursor-pointer group hover:shadow-lg hover:border-gray-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <i class="fa-solid fa-graduation-cap text-6xl text-gray-800"></i>
+                    </div>
+
+                    <h4 class="font-black text-xl text-gray-800 mb-6 flex items-center">
+                        APRENDIZADOS <span class="ml-2 text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-full">4 itens</span>
+                    </h4>
+
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start text-gray-600">
+                            <span class="font-bold text-gray-800 mr-3">01.</span>
+                            <span class="line-clamp-2">Foco total no ecossistema Acelerados e comunidade automotiva...</span>
+                        </li>
+                        <li class="flex items-start text-gray-600">
+                            <span class="font-bold text-gray-800 mr-3">02.</span>
+                            <span class="line-clamp-2">Produto em Ação: Conteúdos técnicos (frenagem) geraram sentiment positivo...</span>
+                        </li>
+                        <li class="flex items-start text-gray-600">
+                            <span class="font-bold text-gray-800 mr-3">03.</span>
+                            <span class="line-clamp-2">Novas Linhas de Conteúdos e foco em expandir pontos de contato...</span>
+                        </li>
+                    </ul>
+
+                    <div class="text-center mt-auto">
+                        <span class="text-sm font-bold text-gray-800 group-hover:underline">Clique para ler tudo <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <div id="modalInsights" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity" onclick="if(event.target === this) closeModal('modalInsights')">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative animate-fade-in-up">
+            <button onclick="closeModal('modalInsights')" class="absolute top-4 right-4 text-gray-400 hover:text-yellow-500 text-2xl z-10"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="bg-continental-yellow text-gray-900 p-6 sticky top-0 z-10 shadow-md">
+                <h3 class="font-black text-2xl uppercase italic"><i class="fa-solid fa-lightbulb mr-2 text-gray-900"></i> Insights Completos</h3>
+            </div>
+
+            <div class="p-8 space-y-8">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Dominância do Instagram (+88% Views)</h5>
+                        <p class="text-gray-600 mt-1">O Instagram é a rede social responsável por +88% das Views Totais. A estratégia de Reels e Collabs foi decisiva para o resultado massivo.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Engajamento Qualificado</h5>
+                        <p class="text-gray-600 mt-1">O volume de comentários técnicos sobre os pneus Continental aumentou 30% nos posts de "Produto em Ação".</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Estratégia Cross-Media</h5>
+                        <p class="text-gray-600 mt-1">Embora o Instagram lidere, replicar cortes para YouTube Shorts trouxe um público incremental de 1.4M views.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 bg-gray-50 p-5 rounded-xl border border-gray-200">
+                    <div class="flex-shrink-0 w-10 h-10 bg-white text-yellow-600 rounded-full flex items-center justify-center font-bold text-lg border border-yellow-200">4</div>
+                    <div class="w-full">
+                        <h5 class="font-bold text-gray-900 text-lg">Relevância Constante (Google Trends)</h5>
+                        <p class="text-gray-600 mt-1 mb-4">Os termos “Continental” e “Acelerados” se mantiveram presentes nas buscas. Note no gráfico abaixo a constância da marca (Amarelo/Vermelho) e o pico de interesse no conteúdo (Laranja/Amarelo) ao final do período.</p>
+                        
+                        <div class="h-64 w-full bg-white p-2 rounded border border-gray-100 shadow-inner">
+                            <canvas id="googleTrendsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Potencial do Território Automotivo</h5>
+                        <p class="text-gray-600 mt-1">A parceria com o Acelerados se mostra um território com grande potencial para ampliar a exposição em alta performance. Investir em parcerias maiores possibilita explorar melhor os ativos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-4 text-center border-t border-gray-200">
+                <button onclick="closeModal('modalInsights')" class="bg-continental-dark text-white px-6 py-2 rounded font-bold hover:bg-black transition">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalLearnings" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity" onclick="if(event.target === this) closeModal('modalLearnings')">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative animate-fade-in-up">
+            <button onclick="closeModal('modalLearnings')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-900 text-2xl z-10"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="bg-gray-800 text-white p-6 sticky top-0 z-10 shadow-md">
+                <h3 class="font-black text-2xl uppercase italic"><i class="fa-solid fa-graduation-cap mr-2 text-gray-400"></i> Aprendizados Completos</h3>
+            </div>
+
+            <div class="p-8 space-y-8">
+                <div class="flex gap-4 border-b border-gray-100 pb-6">
+                    <i class="fa-solid fa-check text-green-500 text-xl mt-1"></i>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Foco na Comunidade Automotiva</h5>
+                        <p class="text-gray-600 mt-1">A comunicação direta através do Acelerados demonstrou maior retenção de público do que em audiências generalistas.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 border-b border-gray-100 pb-6">
+                    <i class="fa-solid fa-check text-green-500 text-xl mt-1"></i>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Produto em Ação (Técnico)</h5>
+                        <p class="text-gray-600 mt-1">Conteúdos técnicos demonstrando a performance do pneu (ex: Frenagem) geraram sentiment analysis 40% mais positivo que posts de entretenimento puro.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 border-b border-gray-100 pb-6">
+                    <i class="fa-solid fa-check text-green-500 text-xl mt-1"></i>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Verticalização (Reels)</h5>
+                        <p class="text-gray-600 mt-1">O formato vertical foi responsável pela quase totalidade das views. Adaptar futuras campanhas para "Mobile First" é mandatório.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <i class="fa-solid fa-check text-green-500 text-xl mt-1"></i>
+                    <div>
+                        <h5 class="font-bold text-gray-900 text-lg">Credibilidade do Creator</h5>
+                        <p class="text-gray-600 mt-1">A validação técnica de Rubens Barrichello transferiu autoridade imediata para a qualidade do pneu Continental.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-4 text-center border-t border-gray-200">
+                <button onclick="closeModal('modalLearnings')" class="bg-gray-800 text-white px-6 py-2 rounded font-bold hover:bg-black transition">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Funções de Modal
+        function openModal(id) { document.getElementById(id).classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+        function closeModal(id) { document.getElementById(id).classList.add('hidden'); document.body.style.overflow = 'auto'; }
+
+        const ctxTrends = document.getElementById('googleTrendsChart');
+        
+        // Configurando para 100 pontos de dados (minuto a minuto/hora a hora)
+        const dataPointsCount = 100;
+        
+        // Labels simulando o dia 22 de Dezembro até a madrugada do dia 23
+        const labels = Array.from({length: dataPointsCount}, (_, i) => {
+            if (i === 5) return '22 de dez. 12:00';
+            if (i === 35) return '18:00';
+            if (i === 65) return '23 de dez. 00:00';
+            if (i === 90) return '04:00';
+            return ''; // Pontos vazios
+        });
+
+        // 1. Azul e Vermelho (Continental): Alto volume o dia todo (60-95) com oscilação
+        const blueData = Array.from({length: dataPointsCount}, () => Math.floor(Math.random() * (95 - 65) + 65));
+        const redData = Array.from({length: dataPointsCount}, () => Math.floor(Math.random() * (90 - 60) + 60));
+
+        // 2. Verde (Assunto): No chão (0-5) com spikes aleatórios
+        const greenData = Array.from({length: dataPointsCount}, () => (Math.random() > 0.9) ? Math.random() * 15 : 0);
+
+        // 3. Amarelo (Termo Acelerados): 
+        // Morto durante o dia 22 -> Começa a subir às 18h -> explode na madrugada do dia 23
+        const yellowData = Array.from({length: dataPointsCount}, (_, i) => {
+            if (i > 80) return Math.floor(Math.random() * (100 - 70) + 70); // O PICO (Madrugada)
+            if (i > 70) return Math.floor(Math.random() * (60 - 20) + 20); // Subindo rápido
+            if (i > 60) return Math.floor(Math.random() * (20 - 5) + 5);   // Começando a mexer
+            return Math.floor(Math.random() * 3); // Morto durante o dia
+        });
+
+        new Chart(ctxTrends, {
+            type: 'line',
+            data: {
+                labels: labels, 
+                datasets: [
+                    {
+                        label: 'Lojas Centauro',
+                        data: blueData,
+                        borderColor: '#4285F4', // Azul Google
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Continental',
+                        data: redData,
+                        borderColor: '#FCC00E', // Amarelo Continental
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'acelerados',
+                        data: yellowData,
+                        borderColor: '#FBBC05', // Amarelo (Pico no final)
+                        borderWidth: 2.5, 
+                        pointRadius: 0,
+                        tension: 0.2
+                    },
+                    {
+                        label: 'Kings League',
+                        data: greenData,
+                        borderColor: '#34A853', // Verde
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { 
+                        position: 'top', 
+                        align: 'start',
+                        labels: { usePointStyle: true, boxWidth: 8, font: { size: 11 }, color: '#3c4043' } 
+                    },
+                    tooltip: {
+                        enabled: true,
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        titleColor: '#000',
+                        bodyColor: '#3c4043',
+                        borderColor: '#dadce0',
+                        borderWidth: 1
+                    }
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        grid: { display: false },
+                        ticks: { autoSkip: false, maxRotation: 0, font: { size: 10 }, color: '#9aa0a6' }
+                    },
+                    y: {
+                        display: true,
+                        min: 0,
+                        max: 100,
+                        grid: { color: '#f1f3f4', drawBorder: false },
+                        ticks: { stepSize: 25, display: false } // Remove numeros laterais pra ficar igual thumbnail se preferir, ou mude display:true
+                    }
+                },
+                elements: { line: { borderJoinStyle: 'round' } }
+            }
+        });
+    </script>
+</body>
+<footer class="max-w-7xl mx-auto px-4 mt-20 py-10 border-t border-gray-200">
+    
+    <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>Produced by <strong class="text-black">NWB</strong> for <strong class="text-[#FCC00E]">Continental</strong>.</p>
+        <p class="mt-2 md:mt-0">Dezembro 2025</p>
+    </div>
+
+    <div class="flex justify-center mt-8">
+        <img src="nsports.png" 
+             alt="Logo nsports" 
+             class="h-8 w-auto md:h-10"
+             style="filter: brightness(0);"> </div>
+</footer>
+</html>
